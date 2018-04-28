@@ -1,24 +1,349 @@
-.App {
+.column{
+  display: inline-block;
+}
+
+
+/*Menu start*/
+#b{
+  display: none;
+}
+
+/*Menu end*/
+
+/*Loading Page Css Begins*/
+
+
+#myProgress {
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 3px;
+  background-color: #4CAF50;
+}
+
+.loading{
+  width: 80vw;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px 0;
+  animation: fadeInLeftBig;
+  animation-duration: 500ms;
+}
+.offloading{
+  animation: fadeOutRightBig;
+  animation-duration: 850ms;
+}
+
+.loading .subtitle{
+  text-align: center;
+  padding: 20px;
+}
+
+/*Loading page Css Ends*/
+
+
+
+/*CSS animation*/
+
+
+.home, .about, .skills, .projects, .contact {
+}
+
+
+
+.rubber:hover{
+  display: inline-block;
+  -webkit-animation: rubberBand 1s;
+  animation: rubberBand 1s;
+  -webkit-animation-play-state:active;
+}
+/*CSS animation end*/
+
+
+
+/*HOME*/
+
+.sideV{
+  font-size: 30em;
+  position: absolute;
+  right: 10%;
+  line-height: initial;
+  transform: rotate(-30deg);
+}
+.other{
+  top:6px;
+  right:11%;
+  color: palegoldenrod;
+}
+
+.github{position: absolute; top: 0; right: 0; border: 0;}
+
+.section{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.simple{
+  font-family: 'Roboto Slab';
+  color: rgba(0, 0, 0, 0.04);
+  z-index: -2;
+  position: absolute;
+  font-size: 24vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.my-logo{
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  padding: 10px 40px;
+  overflow: hidden;
+  border-radius: 10px;
+  left: 50%;
+  font-family: 'Shadows Into Light';
+  border: 5px;
+  font-weight: 200;
+  color: #6e4f4f;
+  font-size: xx-large;
+}
+
+
+.home-description{
+  font-family: 'Roboto Slab';
+  font-size: smaller;
+  font-weight: 100;
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/*HOME end*/
+
+
+
+
+/*About Start*/
+
+.about{
+  font-family: 'Roboto Slab';
+}
+
+
+/*About Ends*/
+
+
+.my-spacing{
+  padding:0;
+  margin:0;
+}
+
+.sidebar{
+  height: 100vh;
+}
+
+.sidebar > .is-1{
+  position: relative;
+  background-color: palegoldenrod;
+}
+
+.sidebar > .content{
+  padding:20px;
+}
+.sidebar .is-1 .menu{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebar > .is-11 > .content{
+  display: inline-block;
+  width: 91.6%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+td:nth-child(2) {
+  width:65%;;
+}
+
+body{
+  font-size: small;
+
+}
+
+.sidebar .is-11{
+
+}
+
+.code{
+  font-family: 'Shadows Into Light';
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.5);
+}
+.content{
+  padding: 10px;
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.rubber{
+  font-size: 4vw;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+}
+.section > .container > .subtitle{
+  margin-top: 10px;
+}
+.menu-list > li > a {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+
+
+/*Form Handling*/
+
+input.input, textarea.textarea{
+  font-size: small;
+  font-family: 'Roboto Slab';
+  font-weight: 200;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+
+/*Form Handling ends*/
+
+
+
+/*Project Page*/
+
+.projects{
+  font-family: "Roboto Slab";
+  min-height: 80vh;
+}
+.card-content{
+  padding: 0;
+}
+.project-title{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.box{
+  transition: all 1s;
+}
+
+.animated .media {
+  position: relative;
+}
+
+.animated .media .block{
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+
+.media-left{
+  margin:auto 0;
+}
+
+.content:not(:last-child){
+  margin-bottom: 0;
+}
+
+.modal{
+  overflow: visible;
+}
+
+
+.cover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: gray;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.cover:hover{
+  opacity: 0;
+}
+.cover > i{
   color: white;
+  display: block;
+  line-height: 600%;
 }
 
-.App-intro {
-  font-size: large;
+.image.is-4by3{
+  overflow: hidden;
+}
+.image.is-4by3 img{
+  top: -17%;
+  height: auto;
+}
+/*Project page ends*/
+
+
+/*Skills Start*/
+.skills{
+  font-family: "Roboto Slab";
+}
+.gauge{
+  margin: 0 calc(50% - 0.5em);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/*Skills end*/
+
+
+
+/*Contact*/
+
+.contact iframe{
+  width:100%;
+  height:250px;
+}
+
+.contact-text{
+  display: inline-block;
+  font-size: medium;
+  opacity: 0.2;
+  padding:5px;
+  font-family: "Roboto Slab";
+}
+.fa:hover .contact-text{
+  opacity: 0.6;
+}
+.vip{
+  padding:0 5px;
+}
+.info-box{
+  position: absolute;
+  top:0;
+  right:0;
+}
+/*Contact*/
+
+@media screen and (max-width: 720px){
+  .section{
+    margin:0;
+    padding:0;
+  }
+  .rubber{
+    font-size: xx-large;
+  }
+  .media>.media-content>.content{
+    padding-bottom: 20px;
+  }
+  .cover{
+    display: none;
+  }
+  .info-box{
+    position: relative;
+  }
 }
