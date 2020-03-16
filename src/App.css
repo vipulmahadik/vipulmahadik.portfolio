@@ -192,6 +192,10 @@ body{
   overflow-x: hidden;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rubber{
   font-size: 4vw;
   font-family: 'Roboto Slab';

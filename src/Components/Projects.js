@@ -135,7 +135,7 @@ class Projects extends Component {
                             </figure>
                         </div>
                         <div className="media-content">
-                            <div className="content">
+                            <div className="content overflow-hidden">
                                 <p>
                                     <strong className="project-title">{obj.title}</strong>
                                     <br/>
